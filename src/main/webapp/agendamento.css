@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+ body {
+            font-family: Arial, sans-serif;
+            /* Adicione o fundo de tela desejado */
+            background-image: url('imagens/ImagemTela.png');
+            /* Ajuste a repetição da imagem, tamanho, posição, etc., conforme necessário */
+            background-repeat: no-repeat;
+            background-size: cover; /* ou 'contain', dependendo da sua preferência */
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 50%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        p strong {
+            color: #333;
+        }

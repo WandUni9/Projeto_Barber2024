@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+
+
+
+body {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  background-color: #FFFCFF;
+  width: 1950px;
+  height: 1000px;
+  background-image: url('imagens/ImagemBarber.png'); /* Define a imagem como fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem na tela */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px black;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  
+}
+
+.hora {
+   background-color: black;
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   width: 100px;
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 2px;
+ }
+
+.saveButton {
+  width: 200px;
+  height: 50px;
+  margin-top: 1vw;
+ 
+}
+
+.cancelaButton {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+#header {
+  padding: 20px;
+  color: #8B0000;
+  font-size: 45px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  
+  
+}
+
+
+#header button {
+  background-color: black;
+}
+
+#container {
+  width: 850px;
+  margin-left: 10vw;
+}
+
+#weekdays {
+  width: 110%;
+  display: flex;
+  color: #247BA0;
+  font-size: 19px;
+}
+
+#weekdays div {
+  width: 120px;
+  padding: 10px;
+}
+
+#calendar {
+  width: 110%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  font-size: 25px;
+}
+
+.day {
+  width: 110px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10%;
+  margin-left: 15px;
+}
+
+.day:hover {
+  background-color: #e8faed;
+  
+}
+
+.day + #currentDay {
+  background-color: #e8f4fa;
+}
+
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+
+#saveButton, #closeButton {
+  background-color: black;
+}
+
+#eventText {
+  font-size: 14px;
+}
+
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.weekdays{
+	background-color: black;
+	width: 50vw;
+	font-size: 10vw;
+}

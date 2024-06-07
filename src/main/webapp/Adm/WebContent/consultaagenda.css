@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+
+body{
+    overflow: auto;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+   overflow-y: auto; /* Mantém a barra de rolagem vertical se necessário */
+}
+	
+/* Adicione um estilo para a linha quando o cursor estiver sobre ela */
+.excel-table tr:hover {
+    background-color: lightblue; /* Define a cor de fundo para a linha quando o cursor estiver sobre ela */
+    cursor: pointer;
+}
+
+.Grid {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin-top: 10px;
+}
+
+.excel-table {
+   width: 100%; /* Ajusta a largura da tabela para ocupar 100% do contêiner */
+   border-collapse: collapse;
+   margin-top: 10px;
+   overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+   overflow-y: auto; /* Mantém a barra de rolagem vertical se necessário */
+}
+/* Estilização dos cabeçalhos da tabela */
+.excel-table th {
+   background-color: #141313;
+   color: #fff;
+   border: 1px solid;
+   text-align: center;
+   padding: 5px;
+   font-size: 30px; /* Aumento do tamanho da fonte */
+}
+
+/* Estilização das células da tabela */
+.excel-table td {
+   border: 1px solid;
+   text-align: center;
+   padding: 2px;
+   font-size: 20px; /* Aumento do tamanho da fonte */
+}
+
+/* Centraliza o título */
+h1 {
+   text-align: center;
+   font-size: 40px; /* Ajusta o tamanho da fonte do título */
+   margin-top: 40px; /* Ajusta o espaçamento superior */
+}
+
+.editar{
+	cursor: pointer;
+}
+
+.excluir{
+	cursor: pointe;
+}

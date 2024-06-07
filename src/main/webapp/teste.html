@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Link do WhatsApp</title>
+</head>
+<body>
+    <label for="telefone">Digite o número de telefone:</label>
+    <input type="text" id="telefone" placeholder="Digite o número de telefone">
+
+    <label for="mensagem">Digite a mensagem (opcional):</label>
+    <input type="text" id="mensagem" placeholder="Digite a mensagem">
+
+    <button onclick="enviarLinkWhatsapp()">Enviar link do WhatsApp</button>
+
+    <script>
+        function enviarLinkWhatsapp() {
+            // Obter o número de telefone digitado pelo usuário
+            var numero = document.getElementById("telefone").value;
+
+            // Verificar se o número não está vazio
+            if (numero.trim() === "") {
+                alert("Por favor, digite um número de telefone.");
+                return;
+            }
+
+            // Formatar o número removendo caracteres especiais
+            numero = numero.replace(/\D/g, '');
+
+            // Construir o link do WhatsApp
+            var url = 'https://wa.me/' + numero;
+
+            // Obter a mensagem digitada pelo usuário
+            var mensagem = document.getElementById("mensagem").value;
+
+            // Se uma mensagem foi fornecida, adicionar ao link
+            if (mensagem.trim() !== "") {
+                // Codificar a mensagem para que funcione corretamente na URL
+                mensagem = encodeURIComponent(mensagem);
+                url += '?text=' + mensagem;
+            }
+
+            // Abrir o link em uma nova aba
+            window.open(url);
+        }
+    </script>
+</body>
+</html>

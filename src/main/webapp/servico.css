@@ -1,0 +1,123 @@
+@charset "ISO-8859-1";
+
+/* Reset CSS */
+
+body {
+    font-family: sans-serif;
+    overflow: auto;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz a imagem de fundo fixar-se enquanto rola a página */
+}
+
+.container {
+    width: 150%;
+    max-width: 980px;
+    margin: 0px;
+}
+
+.header {
+    background-color: #090909;
+    color: #fff;
+    padding: 50px;
+    width: 94vw;
+    margin-left: 0vw;
+    margin-top: -2vw;
+    height: 5vw;
+}
+
+.logo {
+    float: left;
+    width: 80px;
+    height: 50px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    padding: 20px;
+}
+
+.imagem-servico {
+    float: left;
+    width: 50%;
+}
+
+.informacoes-servico {
+    font-size: 30px;
+    width: 20vw;
+    margin-left: 36vw;
+    height: 20vw;
+    padding: 100px;
+    color: black; /* Cor preta */
+    font-weight: bold; /* Negrito para maior visibilidade */
+    margin-top: -5vw;
+    font-weight: 700; /* Mais grosso para maior visibilidade */
+}
+
+
+.lista-servicos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicos li {
+    margin-bottom: 15px;
+}
+
+.lista-servicos input {
+    margin-right: 10px;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.lista-servicos label {
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 10px;
+}
+
+.total .texto {
+    font-weight: bold;
+}
+
+.botoes {
+    margin-top: 10px;
+    display: 40px; 
+    /* Make buttons display inline */
+}
+
+.botao-expansivo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-especialista {
+    margin-left: 70px;
+}
+
+.BtnEspecialista {
+    background-color: #161313;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px; /* Define um arredondamento de 10 pixels nas bordas */
+}
+

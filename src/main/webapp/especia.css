@@ -1,0 +1,149 @@
+@charset "ISO-8859-1";
+
+
+
+body {
+	overflow: hidden !important; /* Certifique-se de que a regra prevale�a */
+
+    transform: scale(1.0); /* Aumenta o tamanho da tela em 20% */
+    transform-origin: 0 0; /* Define o ponto de origem da transforma��o no canto superior esquerdo */
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+/* Reset CSS */
+/* Reset CSS */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.h3{
+	
+	text-align: center;
+}
+
+
+ .pesquisa {
+   flex: 2;
+   margin-left: 20px;
+ }
+ 
+ .usuario {
+   flex: 1;
+   text-align: right;
+ }
+ 
+ .usuario img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+ }
+ 
+ /* Main */
+ main {
+   padding: 60px;
+   margin-right: calc(100vw - 100%);
+   margin-bottom: calc(100vh - 100%);
+}
+ 
+ /* Data e Hora */
+ .data-hora {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+ 
+ .data-hora span {
+   font-size: 18px;
+ }
+ 
+ .data-hora button {
+   background-color: #fff;
+   border: 1px solid #ccc;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ /* Especialistas */
+ .especialistas {
+   border: 1px solid #333;
+   border-radius: -1px;
+   padding: 5px;
+ }
+
+ .especialistas h2 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   margin-right: 50px; /* Ajusta a margem entre o t�tulo e o bot�o */
+ }
+
+ .especialistas .especialista-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; /* Distribui o espa�o entre os itens */
+   border-bottom: 2px solid #141313;
+   margin-bottom: 20px; /* Adiciona margem entre os especialistas */
+   width: -10px; 
+   	 
+ }
+
+ .especialistas .foto {
+   margin-right: 20px; /* Adiciona margem entre a imagem e o nome do especialista */
+ }
+
+ .especialistas .info {
+   flex-grow: 1; /* Permite que o nome do especialista ocupe o espa�o dispon�vel */
+ }
+
+ .especialistas .botao-agendar {
+   margin-left: 20px; /* Adiciona margem entre o nome do especialista e o bot�o */
+   width: 100px;
+   height: 30px;
+ }
+ 
+ .detalhes{
+ 	width: 500px;
+    height: 100px;
+    padding: 25px;
+    cursor: pointer;
+ 
+ }
+ 
+ .logo{
+ 	background-color: black; /* Cor de fundo preta */
+ }
+ .imgLogo{
+	padding: 50px;
+	margin-left: 950px;
+	height: 250px;
+	
+}
+.botao-agendar{
+	background-color: #141313;
+	color: #f9f9f9;
+	font-size: 20px;
+}
+
+.BtnConfirmaAgendamento {
+	width: 210px;
+	height: 35px; 
+	 margin-left: -1450px;
+	 padding: 5px;
+	
+}
+
+.BtnEditar{
+	width: 210px;
+	height: 35px; 
+	
+}
+
+.BtnCancelar{
+	width: 210px;
+	height: 35px; 
+}
